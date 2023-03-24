@@ -1,0 +1,51 @@
+----------------------------------------------------------------------------
+
+                        MENU DE AYUDA
+
+----------------------------------------------------------------------------
+
+UNIDADES DE MEDIDAS DE LONGITUD VALISDAS SON mt, km, mm y cm, UNidades de giro validas son grados y radianes
+----------------------------------------------------------------------------
+comando: cargar_comandos nombre_archivo
+salida en pantalla:
+
+descripción: Carga en memoria los comandos de desplazamiento contenidos en el archivo identificado por nombre_archivo
+----------------------------------------------------------------------------
+• comando: cargar_elementos nombre_archivo
+salida en pantalla:
+
+descripción: Carga en memoria los datos de puntos de interés o elementos contenidos en el archivo identificado por nombre_archivo
+----------------------------------------------------------------------------
+comando: agregar_movimiento tipo_mov magnitud unidad_med
+salida en pantalla:
+
+descripción: Agrega el comando de movimiento descrito a la lista de comandos del robot “Curios-
+ity”. El movimiento puede ser de dos tipos: avanzar o girar. La magnitud corresponde al valor del
+movimiento; si es avanzar, el número de unidades que se espera avanzar, si es girar la cantidad de grados que debe girar.
+----------------------------------------------------------------------------
+• comando: agregar_analisis tipo_analisis objeto comentario
+salida en pantalla:
+
+Agrega el comando de análisis descrito a la lista de comandos del robot “Curiosity”. El
+análisis puede ser de tres tipos: fotografiar, composicion o perforar. El objeto es el nombre del
+elemento que se quiere analizar (roca, arena, monticulo, ...). El comentario es opcional y permite agregar más información sobre el elemento o el análisis,
+---------------------------------------------------------------------------
+• comando: agregar_elemento tipo_comp tamaño unidad_med coordX coordY
+
+descripción: Agrega el componente o elemento descrito a la lista de puntos de interés del robot “Cu-
+riosity”. El tipo de componente puede ser uno entre roca, crater, monticulo o duna.
+---------------------------------------------------------------------------
+• comando: guardar tipo_archivo nombre_archivo
+salida en pantalla:
+
+descripción: Guarda en el archivo nombre_archivo la información solicitada de acuerdo al tipo de archivo: comandos almacena en el archivo la información de comandos de movimiento y de análisis que debe ejecutar el robot, elementos almacena en el archivo la información de los componentes o puntos de interés conocidos en el suelo marciano.
+---------------------------------------------------------------------------
+• comando: simular_comandos coordX coordY
+salida en pantalla:
+
+descripción: Permite simular el resultado de los comandos de movimiento que se enviarán al robot
+“Curiosity” desde la Tierra, facilitando asi la validación de la nueva posición en la que podría ubicarse. Para ejecutarse adecuadamente, requiere conocer la posición actual (coordenadas x y y) del vehículo.
+---------------------------------------------------------------------------
+• comando: salir
+salida en pantalla:
+descripción: Termina la ejecución de la aplicación.
