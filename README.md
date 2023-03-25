@@ -1,0 +1,3 @@
+# proyectoEDA 
+
+./proyecto para ejecutar
