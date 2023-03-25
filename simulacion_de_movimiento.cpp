@@ -12,7 +12,7 @@ bool simularCoolicionConObjetos(float tamaño, float coordX, float coordY, float
 
     float PuntoAlCentro = sqrt((pow((posicionActualY-coordY),2))+(pow((posicionActualX-coordX),2)));
 
-    if(PuntoAlCentro <= mitadLongitud){
+    if(PuntoAlCentro >= mitadLongitud){
         return false;
     }else{
         return true;
