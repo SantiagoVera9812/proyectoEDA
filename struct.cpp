@@ -5,7 +5,11 @@ Curiosity Makecuriosity(float ncoordX, float ncoordY) {
     Curiosity initialized = {ncoordX, ncoordY};
 
     return initialized;
+<<<<<<< HEAD
 }
+=======
+    }
+>>>>>>> 0711070 (entrega2)
 
 float getCoordY(Curiosity *self) {
 

@@ -1,0 +1,6 @@
+f|asd|asdre
+c|aer|cdfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+1|12|mt
+1|10|mt
+1|134|mt
+1|0.12|mt

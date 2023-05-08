@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 #pragma once
 #include <string>
+=======
+   #pragma once
+#include <string>
+//al parecer no se usa, toca revisar bien otra vez
+>>>>>>> 0711070 (entrega2)
 struct info_separada{
     std::string tipo_comando;
     std::string nombre_accion;
@@ -15,8 +21,13 @@ struct Curiosity{
 };
 
 Curiosity Makecuriosity(float ncoordX,float ncoordY);
+<<<<<<< HEAD
 float getcoordX(Curiosity *self);
 float getCoordY(Curiosity *self);
+=======
+    float getcoordX(Curiosity *self);
+    float getCoordY(Curiosity *self);
+>>>>>>> 0711070 (entrega2)
 
 struct Movimientos{
 
@@ -25,8 +36,13 @@ struct Movimientos{
     std::string  unidad_med; //unidad de medida
 };
 
+<<<<<<< HEAD
 Movimientos movimiento(bool ntipo_mov,float nmagnitud,std::string nunidad_med);
 void getMovimientos(Movimientos *self);
+=======
+ Movimientos movimiento(bool ntipo_mov,float nmagnitud,std::string nunidad_med);
+    void getMovimientos(Movimientos *self);
+>>>>>>> 0711070 (entrega2)
 struct Analisis{
 
     char tipo_analisis;
@@ -34,8 +50,13 @@ struct Analisis{
     std::string comentario;
 };
 
+<<<<<<< HEAD
 Analisis analisis(char ntipo_analisis,std::string nobjeto,std::string comentario);
 void getAnalisis(Analisis *self);
+=======
+ Analisis analisis(char ntipo_analisis,std::string nobjeto,std::string comentario);
+    void getAnalisis(Analisis *self);
+>>>>>>> 0711070 (entrega2)
 
 struct Elemento{
 
@@ -48,4 +69,8 @@ struct Elemento{
 };
 
 Elemento elemento(std::string nTipo_comp,float tam,std::string unidad_med,float ncoordx, float ncoordy );
+<<<<<<< HEAD
 void getElemento(Elemento *self);
+=======
+    void getElemento(Elemento *self);
+>>>>>>> 0711070 (entrega2)
