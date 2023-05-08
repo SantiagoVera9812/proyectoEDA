@@ -1,3 +1,3 @@
 # proyectoEDA 
 
-./proyecto para ejecutar
+./myprogram para ejecutar
