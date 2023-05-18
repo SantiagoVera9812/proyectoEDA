@@ -11,10 +11,8 @@
 #include <list>
 #include <vector>
 #include "conversionUnidades.h"
-<<<<<<< HEAD
-=======
 #include "kdTree.h"
->>>>>>> 0711070 (entrega2)
+
 //DEFINICION DE VALORES PARA CONVERSION DE UNIDADES
 #define MAX_LENGHT 100
 #define UNIDAD_MEDIDA "mt"
@@ -25,7 +23,7 @@
 //-----------------------------------------------------------------------------------------------//
 std::string *tokenizacion(std::string comand);
 int main(){
-<<<<<<< HEAD
+
     bool running = true;
     std::list<Movimientos> listaDeMovimientos;
     std::list<Analisis> listaDeAnalisis;
@@ -55,7 +53,7 @@ int main(){
             printf("opcion no valida\n");
             return 0;
         }
-=======
+
   bool running = true;
 std::list<Movimientos> listaDeMovimientos;
 std::list<Analisis> listaDeAnalisis;
@@ -86,7 +84,7 @@ Curiosity curiosity;
         printf("opcion no valida\n");
         return 0;
     }
->>>>>>> 0711070 (entrega2)
+
 //-----------------------------------------------------------------------------------------------//
 //DE ESTE PROCESO SALE LAS VARIABLES ARGC, Y USERINPIT[], USERINPUT ES UNA VARIABLE DE STRINGS QUE REPRESENTA LOS ARGUMENTOS PUESTOS POR EL USUARIO, ARGC-1 REPRESENTARA EL NUMERO DE ARGUMENTOS YA QUE EL ARRAY DE ARGUMENTOS EMPEZARA EN USERINPUT[1]
 //-----------------------------------------------------------------------------------------------//
@@ -95,7 +93,7 @@ Curiosity curiosity;
 //MAPA QUE RELACIONA UN STRING CON EL NOMBRE DE LA FUNCION CON UNA FUNCION VOID QUE HARA EL LLAMADO A LA FUNCION A LA QUE SE LE LLEGA EL NOMBRE
 //-----------------------------------------------------------------------------------------------//
 //PARA AGREGAR UNA FUNCION SE HARA func[nombreDeFuncion] = [lambdaDeExpresion](){Llamado a la funcion} donde lambda de expresion es el numero de argumentos para validar que sea un comando valido y el array userinput puesto por el usuario
-<<<<<<< HEAD
+
         //-----------------------------------------------------------------------------------------------//
 
 
@@ -254,7 +252,7 @@ Curiosity curiosity;
 
     return 0;
 }
-=======
+
   //-----------------------------------------------------------------------------------------------//
 
   
@@ -481,4 +479,4 @@ Curiosity curiosity;
 }
 
 
->>>>>>> 0711070 (entrega2)
+
