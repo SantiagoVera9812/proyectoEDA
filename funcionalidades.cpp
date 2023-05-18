@@ -11,7 +11,6 @@ std::string addTxtExtension(std::string filename);
 
 void cargar_elementos(std::string nombre_archivo,std::list<Elemento> *ListaElemento){
 
-<<<<<<< HEAD
     std::string nNombre_archivo = addTxtExtension(nombre_archivo);
 
     std::ifstream archivo(nNombre_archivo);
@@ -39,7 +38,7 @@ void cargar_elementos(std::string nombre_archivo,std::list<Elemento> *ListaEleme
 
         printf("No se pudo leer el archivo");
     }
-=======
+
 std::string nNombre_archivo = addTxtExtension(nombre_archivo);
   
     std::ifstream archivo(nNombre_archivo);
@@ -67,14 +66,14 @@ std::string nNombre_archivo = addTxtExtension(nombre_archivo);
 
     printf("No se pudo leer el archivo");
   }
->>>>>>> 0711070 (entrega2)
+
 }
 
 
 
 void cargar_comandos(std::string nombre_archivo,std::list<Analisis> *listaAnalisis,std::list<Movimientos> *listaMovimientos){
     //1. VER SI SE TRATA DE COMANDO DE ANALISIS Y COMANDO DE MOVIMIENTO
-<<<<<<< HEAD
+
     //2. GUARDAR EN LISTA CORRESPONDIENTE
     std::string nNombre_archivo = addTxtExtension(nombre_archivo);
 
@@ -183,7 +182,7 @@ void guardar(std::string tipo_archivo,std::string nombre_archivo,std::list<Eleme
             archivo.close();
             printf("guardando elementos");
         }}else{
-=======
+
     //2. GUARDAR EN LISTA CORRESPONDIENTE 
     std::string nNombre_archivo = addTxtExtension(nombre_archivo);
     
@@ -295,7 +294,7 @@ void guardar(std::string tipo_archivo,std::string nombre_archivo,std::list<Eleme
 }
 void simular_comandos(std::string coordX,std::string coordY,std::list<Movimientos> *listaMovimientos,std::list<Elemento> *ListaElemento,Curiosity *curiosity){
 
-<<<<<<< HEAD
+
 
     printf("...............\n");
 
@@ -344,7 +343,7 @@ void simular_comandos(std::string coordX,std::string coordY,std::list<Movimiento
         if(it->tipo_mov == false) {
 
             //SI ES UN GIRO Y LUEGO AVANZA,
-=======
+
     
   printf("...............\n");
   try{
@@ -391,7 +390,7 @@ float nRadianes=0.0f; //INICIALIZAR RADIANES, RADIANES ES UN VALOR GLOBAL
       }
     cont++;
         if(it->tipo_mov == false) {
->>>>>>> 0711070 (entrega2)
+
             if (it->tipo_mov == false && std::next(it) != listaMovimientos->end() && std::next(it)->tipo_mov == true) {
                 //el primer caso es si es un girro y luego avanza, se avanzara con el giro anterior
                 nRadianes = it->magnitud;
@@ -405,7 +404,7 @@ float nRadianes=0.0f; //INICIALIZAR RADIANES, RADIANES ES UN VALOR GLOBAL
                 it++;
             }
         }else{
-<<<<<<< HEAD
+
             //SI HAY DOS AVANCES SEGUIDOS CON UN MISMO GIRO
             if (std::next(it) != listaMovimientos->end() && std::next(it)->tipo_mov == true) {
                 float nMagnitud = it->magnitud;
@@ -445,7 +444,7 @@ float nRadianes=0.0f; //INICIALIZAR RADIANES, RADIANES ES UN VALOR GLOBAL
 
 
 }
-=======
+
         if (std::next(it) != listaMovimientos->end() && std::next(it)->tipo_mov == true) {
             float nMagnitud = it->magnitud;
             float ultimoGiro = 0.0f;
@@ -487,7 +486,7 @@ float nRadianes=0.0f; //INICIALIZAR RADIANES, RADIANES ES UN VALOR GLOBAL
  
 
         }
->>>>>>> 0711070 (entrega2)
+
 void agregar_analisis(std::string tipo_analisis,std::string objeto,std::string comentario,std::list<Analisis> *listaAnalisis){
     std::cout<<tipo_analisis<<objeto<<comentario;
     char ntipo_a;
@@ -497,7 +496,7 @@ void agregar_analisis(std::string tipo_analisis,std::string objeto,std::string c
     }//CONVERTIR A MAYUSCULAS PARA HACER VALIDACION
     if(tipo_analisis == "FOTOGRAFIAR"){
         ntipo_a = 'f';
-<<<<<<< HEAD
+
         Analisis ed = analisis(ntipo_a, objeto, comentario);
         listaAnalisis->push_back(ed);
     }else if(tipo_analisis == "COMPOSICION"){
@@ -508,7 +507,7 @@ void agregar_analisis(std::string tipo_analisis,std::string objeto,std::string c
         ntipo_a = 'p';
         Analisis ed = analisis(ntipo_a, objeto, comentario);
         listaAnalisis->push_back(ed);
-=======
+
       Analisis ed = analisis(ntipo_a, objeto, comentario);
   listaAnalisis->push_back(ed);
     }else if(tipo_analisis == "COMPOSICION"){
@@ -519,7 +518,7 @@ void agregar_analisis(std::string tipo_analisis,std::string objeto,std::string c
         ntipo_a = 'p';
       Analisis ed = analisis(ntipo_a, objeto, comentario);
   listaAnalisis->push_back(ed);
->>>>>>> 0711070 (entrega2)
+
     }else{
         comandoValido = false;
     }
@@ -533,13 +532,13 @@ void agregar_analisis(std::string tipo_analisis,std::string objeto,std::string c
 
 void agregar_movimiento(std::string tipo_mov,std::string magnitud,std::string unidad_med,std::list<Movimientos> *listaMovimientos){
 
-<<<<<<< HEAD
+
     float nMagnitud = std::stof(magnitud.c_str());
-=======
+
     try {
     float nMagnitud = std::stof(magnitud.c_str());
  
->>>>>>> 0711070 (entrega2)
+
     //CONVERTIR DATOS STRING AL TIPO DE DATO QUE SE NECESITA
     for (auto& c: tipo_mov){
         c= std::toupper(c);
@@ -547,7 +546,7 @@ void agregar_movimiento(std::string tipo_mov,std::string magnitud,std::string un
     bool ntipo_mov = true;
     if(tipo_mov == "AVANZAR"){
         ntipo_mov = true;
-<<<<<<< HEAD
+
         Movimientos mov = movimiento(ntipo_mov, nMagnitud, unidad_med);
         listaMovimientos -> push_back(mov);
 
@@ -558,7 +557,7 @@ void agregar_movimiento(std::string tipo_mov,std::string magnitud,std::string un
     }else{
         printf("Por favor vuelva a digitar el comando\n");
     };
-=======
+
       Movimientos mov = movimiento(ntipo_mov, nMagnitud, unidad_med);
   listaMovimientos -> push_back(mov);
   
@@ -575,7 +574,7 @@ void agregar_movimiento(std::string tipo_mov,std::string magnitud,std::string un
       printf("Comando Invalido");
       return;
 }
->>>>>>> 0711070 (entrega2)
+
 
 }
 
@@ -586,17 +585,16 @@ void agregar_elemento(std::string tipo_comp,std::string tamaño,std::string unid
         c= std::toupper(c);
     }//CONVERTIR A MAYUSCULAS PARA HACER VALIDACION
     //CONVERTIT DATOS STRING AL TIPO DE DATO QUE SE NECESITA
-<<<<<<< HEAD
-=======
+
     try{
->>>>>>> 0711070 (entrega2)
+
     float nTamaño = std::stof(tamaño.c_str());
     float nCoordX = std::stof(coordX.c_str());
     float nCoordY = std::stof(coordY.c_str());
 
     if(tipo_comp == "ROCA"){
         tipo_comp = "Roca";
-<<<<<<< HEAD
+
         Elemento el = elemento(tipo_comp, nTamaño, unidad_med, nCoordX, nCoordY);
         listaElemento->push_back(el);
     }else if(tipo_comp == "CRATER"){
@@ -611,7 +609,7 @@ void agregar_elemento(std::string tipo_comp,std::string tamaño,std::string unid
         tipo_comp = "Duna";
         Elemento el = elemento(tipo_comp, nTamaño, unidad_med, nCoordX, nCoordY);
         listaElemento->push_back(el);
-=======
+
        Elemento el = elemento(tipo_comp, nTamaño, unidad_med, nCoordX, nCoordY);
   listaElemento->push_back(el);
     }else if(tipo_comp == "CRATER"){
@@ -626,7 +624,7 @@ void agregar_elemento(std::string tipo_comp,std::string tamaño,std::string unid
         tipo_comp = "Duna";
        Elemento el = elemento(tipo_comp, nTamaño, unidad_med, nCoordX, nCoordY);
   listaElemento->push_back(el);
->>>>>>> 0711070 (entrega2)
+
 
     }else{
         comandoValido = false;
@@ -634,20 +632,17 @@ void agregar_elemento(std::string tipo_comp,std::string tamaño,std::string unid
     if(comandoValido == false){
         printf("por favor vuelva a digitar el comando\n");
     }
-<<<<<<< HEAD
 
-=======
 }catch (const std::invalid_argument& e) {
 
       printf("Comando Invalido");
       return;
 }
->>>>>>> 0711070 (entrega2)
+
 }
 
 void help(){
 
-<<<<<<< HEAD
     std::ifstream file("help.txt");
 
     if(!file)
@@ -666,7 +661,6 @@ void help(){
     return;
 }
 
-=======
 std::ifstream file("help.txt");
 
 if(!file)
@@ -685,15 +679,13 @@ std::cerr<<"No se encontro el archivo"<<std::endl;
   return;
 } 
 
->>>>>>> 0711070 (entrega2)
 std::string addTxtExtension(std::string filename) {
     if (filename.length() < 4 || filename.substr(filename.length()-4) != ".txt") {
         filename += ".txt";
     }
     return filename;
 }
-<<<<<<< HEAD
-=======
+
 
 void ubicar_elementos(std::list<Elemento> *ListaElemento,kdTree<2> *kdtree){
   int coords[2];
@@ -703,4 +695,4 @@ for (Elemento ele: *ListaElemento){
   kdtree->insert(coords);
 }
 }
->>>>>>> 0711070 (entrega2)
+
