@@ -8,7 +8,7 @@
 
 bool simularCoolicionConObjetos(float tamaño, float coordX, float coordY, float posicionActualX, float posicionActualY){
 
-<<<<<<< HEAD
+
     float mitadLongitud = sqrt(tamaño)/2;
 
     float PuntoAlCentro = sqrt((pow((posicionActualY-coordY),2))+(pow((posicionActualX-coordX),2)));
@@ -38,7 +38,7 @@ Curiosity simulacionMovimiento(float magnitud,float radianes, Curiosity *self){
     std::cout<<"Curiosity esta en " <<self->coordy<<"en la coordenada y\n";
 
     return *self;
-=======
+
 float mitadLongitud = sqrt(tamaño)/2;
 float PuntoAlCentro = sqrt((pow((posicionActualY-coordY),2))+(pow((posicionActualX-coordX),2)));
 if(PuntoAlCentro >= mitadLongitud){
