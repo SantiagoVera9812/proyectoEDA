@@ -3,7 +3,6 @@
 #include <list>
 #include "struct.h"
 #include "kdTree.h"
-
 //cargar_elementos userInput[1], nombre_archivo userInput[2]
 void cargar_elementos(std::string nombre_archivo,std::list<Elemento> *ListaElemento);
 //cargar_comandos userInput[1], nombre_archivo userInput[2]
@@ -19,5 +18,6 @@ void agregar_movimiento(std::string tipo_mov,std::string magnitud,std::string un
 //agregar_elemento userInput[1], tipo_comp userInput[2], tamaño userInput[3], unidad_med[4], coordX[5], coordY[6]
 void agregar_elemento(std::string tipo_comp,std::string tamaño,std::string unidad_med,std::string coordX,std::string coordY, std::list<Elemento> *ListaElemento);
 void ubicar_elementos(std::list<Elemento> *ListaElemento,kdTree<2> *kdtree);
-
+void crear_mapa(std::list<int*>* newLista, int nVecinos, int nElementos);
+void ruta_mas_larga(std::list<int*>* newLista, int nElementos);
 void help();

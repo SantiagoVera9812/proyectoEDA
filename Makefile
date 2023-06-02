@@ -1,30 +1,16 @@
-# Compiler
-CC = g++
-# Compiler flags
-CFLAGS = -Wall -Wextra -std=c++11
-# Linker flags
-LFLAGS =
-# Source files
-SRCS = funcionalidades.cpp conversionUnidades.cpp main.cpp simulacion_de_movimiento.cpp struct.cpp kdTree.h
-# Header files
-HDRS = funcionalidades.h conversionUnidades.h simulacion_de_movimiento.h struct.h
-# Object files
-OBJS = $(SRCS:.cpp=.o)
-# Executable name
-TARGET = myprogram
+all: main
 
-# Default rule
-all: $(TARGET)
+CXX = clang++
+override CXXFLAGS += -g -Wno-everything
 
-# Rule to build the executable
-$(TARGET): $(OBJS)
-	$(CC) $(LFLAGS) $(OBJS) -o $(TARGET)
+SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.cpp' -print | sed -e 's/ /\\ /g')
+HEADERS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.h' -print)
 
-# Rule to compile source files
-%.o: %.cpp $(HDRS)
-	$(CC) $(CFLAGS) -c $< -o $@
+main: $(SRCS) $(HEADERS)
+	$(CXX) $(CXXFLAGS) $(SRCS) -o "$@"
 
-# Clean rule
+main-debug: $(SRCS) $(HEADERS)
+	$(CXX) $(CXXFLAGS) -O0 $(SRCS) -o "$@"
+
 clean:
-	rm -f $(OBJS) $(TARGET)
-
+	rm -f main main-debug

@@ -2,3 +2,9 @@ Duna|12|cm|45|67
 Roca|50|cm|67|45
 Monticulo|4|mt|56|34
 Crater|3|km|170|500
+Roca|50|cm|10|20
+Roca|50|cm|80|90
+Roca|50|cm|12|27
+Roca|50|cm|21|69
+Roca|50|cm|58|34
+Roca|50|cm|6|7

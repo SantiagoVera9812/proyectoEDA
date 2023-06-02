@@ -1,3 +1,0 @@
-# proyectoEDA 
-
-./myprogram para ejecutar
