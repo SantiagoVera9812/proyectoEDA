@@ -4,60 +4,36 @@
 
 ----------------------------------------------------------------------------
 
-<<<<<<< HEAD
-UNIDADES DE MEDIDAS DE LONGITUD VALISDAS SON mt, km, mm y cm, UNidades de giro validas son grados y radianes
-=======
 
->>>>>>> 0711070 (entrega2)
 ----------------------------------------------------------------------------
 comando: cargar_comandos nombre_archivo
 salida en pantalla:
 
-<<<<<<< HEAD
-descripción: Carga en memoria los comandos de desplazamiento contenidos en el archivo identificado por nombre_archivo
-=======
 descripción: Carga en memoria los comandos de desplazamiento contenidos en el archivo identificado por nombre_archivo 
->>>>>>> 0711070 (entrega2)
 ----------------------------------------------------------------------------
 • comando: cargar_elementos nombre_archivo
 salida en pantalla:
 
-<<<<<<< HEAD
-descripción: Carga en memoria los datos de puntos de interés o elementos contenidos en el archivo identificado por nombre_archivo
-=======
 descripción: Carga en memoria los datos de puntos de interés o elementos contenidos en el archivo identificado por nombre_archivo 
->>>>>>> 0711070 (entrega2)
 ----------------------------------------------------------------------------
 comando: agregar_movimiento tipo_mov magnitud unidad_med
 salida en pantalla:
 
 descripción: Agrega el comando de movimiento descrito a la lista de comandos del robot “Curios-
 ity”. El movimiento puede ser de dos tipos: avanzar o girar. La magnitud corresponde al valor del
-<<<<<<< HEAD
-movimiento; si es avanzar, el número de unidades que se espera avanzar, si es girar la cantidad de grados que debe girar.
-=======
 movimiento; si es avanzar, el número de unidades que se espera avanzar, si es girar la cantidad de grados que debe girar. 
->>>>>>> 0711070 (entrega2)
 ----------------------------------------------------------------------------
 • comando: agregar_analisis tipo_analisis objeto comentario
 salida en pantalla:
 
 Agrega el comando de análisis descrito a la lista de comandos del robot “Curiosity”. El
 análisis puede ser de tres tipos: fotografiar, composicion o perforar. El objeto es el nombre del
-<<<<<<< HEAD
-elemento que se quiere analizar (roca, arena, monticulo, ...). El comentario es opcional y permite agregar más información sobre el elemento o el análisis,
-=======
 elemento que se quiere analizar (roca, arena, monticulo, ...). El comentario es opcional y permite agregar más información sobre el elemento o el análisis, 
->>>>>>> 0711070 (entrega2)
 ---------------------------------------------------------------------------
 • comando: agregar_elemento tipo_comp tamaño unidad_med coordX coordY
 
 descripción: Agrega el componente o elemento descrito a la lista de puntos de interés del robot “Cu-
-<<<<<<< HEAD
-riosity”. El tipo de componente puede ser uno entre roca, crater, monticulo o duna.
-=======
 riosity”. El tipo de componente puede ser uno entre roca, crater, monticulo o duna. 
->>>>>>> 0711070 (entrega2)
 ---------------------------------------------------------------------------
 • comando: guardar tipo_archivo nombre_archivo
 salida en pantalla:
