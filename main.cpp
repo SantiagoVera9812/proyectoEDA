@@ -333,5 +333,3 @@ Curiosity curiosity;
 
     return 0;
 }
-
-
